@@ -10,13 +10,13 @@ class AddressBookMain {
         System.out.println();
         System.out.println("To Show AddressBook : Press 1");
         System.out.println("To Add Contact to AddressBook : Press 2");
-        //System.out.println("To Edit Contact in AddressBook : Press 3");
+        System.out.println("To Edit Contact in AddressBook : Press 3");
        // System.out.println("To Delete Contact from AddressBook : Press 4");
 
 
         Scanner scanner = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
-       // Scanner sc3 = new Scanner(System.in);
+        Scanner scanner3 = new Scanner(System.in);
 
         int option = scanner.nextInt();
 
@@ -58,19 +58,19 @@ class AddressBookMain {
             }
             break;
 
-            /*case 3 : {
+            case 3 : {
                 System.out.println("Please Select the Contact to Edit !!!!!");
                 System.out.println("Enter the First Name :");
-                String firstname = sc3.nextLine();
+                String firstname = scanner3.nextLine();
 
-                EditContact ec = new EditContact();
-                ec.EditData(firstname);
+                EditContact edit = new EditContact();
+                edit.EditData(firstname);
 
                 //ec.Show();
             }
             break;
 
-            case 4 : {}
+           /* case 4 : {}
             break;*/
 
             default : System.out.println("Invalid Option");
@@ -78,6 +78,6 @@ class AddressBookMain {
         }
         scanner.close();
         scanner2.close();
-       // sc3.close();
+        scanner3.close();
     }
 }
